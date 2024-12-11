@@ -1,0 +1,43 @@
+.menugame{
+    width: 380px;
+    border: 5px solid rgb(255, 0, 0);
+    font-family: 'Roboto' sans-serif;
+    font-style: italic;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+    text-align: center;
+    background-image: url('./hacker.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    justify-content: center;
+    margin-top: 300px;
+    display: flex;
+    background-image: url('./nen.jfif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.button-with-image {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 40px;
+    border-radius: 30px;
+    border: none;
+}
+.hitclub{
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+}
+h1{
+    background: linear-gradient(to right, #121FCF 10%, #ff0000 41%, #5fdd15 68%, #CF1512 94%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

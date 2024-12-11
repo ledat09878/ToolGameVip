@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit Club</title>
+    <link rel="stylesheet" href="../css/tool.css">
+    <style>
+        h1{
+            font-family: sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            background: linear-gradient(to right, #121FCF 10%, #00FF00 41%, #9E9229 68%, #CF1512 94%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+         <img src="../css/hitclub.jfif" class="baytamclub">
+        <h1>Nhập Mã Phiên</h1>
+        <input type="number" placeholder="Nhập Mã Phiên">
+        <div class="button-ero">
+            <button onclick="decreaseTurn()" id="toggleButton">BÁO KẾT QUẢ</button>
+            <div class="circle-container">
+                <div id="circle1" class="circle circle1">Tài</div>
+                <div id="circle2" class="circle circle2">Xỉu</div>
+            </div>
+            <h3><div id="percentDisplay" class="percent-display"></div></h3>
+        </div>
+    </div>
+</body>
+<script src="../js/nhay..js"></script>
+</html>

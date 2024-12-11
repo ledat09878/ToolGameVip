@@ -1,0 +1,84 @@
+.container{
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    border: 2px solid rgb(78, 238, 112);
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background: transparent;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    border: 5px solid red; /* Border ban đầu */
+    animation: blink-border 1s infinite; /* Áp dụng animation */
+      }
+      
+      /* Keyframes cho hiệu ứng nhấp nháy */
+      @keyframes blink-border {
+        0% {
+          border-color: rgb(9, 230, 1); /* Màu ban đầu */
+        }
+        50% {
+          border-color: transparent; /* Khi nhấp nháy border sẽ biến mất */
+        }
+        100% {
+          border-color: red; /* Trở lại màu ban đầu */
+        }
+}
+h2{
+    font-family: sans-serif;
+    background: linear-gradient(to right, #121FCF 10%, #00FF00 41%, #9E9229 68%, #CF1512 94%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border: none;
+}
+body{
+    background-image: url('./back.jfif');
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Định dạng cơ bản cho button */
+.button-ef {
+    width: 220px;
+    height: 39px;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: #1a962b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Thiết lập thời gian cho hiệu ứng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none; /* Xóa outline khi bấm */
+  }
+  
+  /* Hiệu ứng khi di chuột vào button */
+  .button-ef:hover {
+    background-color: #a71a1a; /* Màu nền thay đổi khi hover */
+    transform: scale(1.1); /* Tăng kích thước nút khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi hover */
+  }
+  
+  /* Hiệu ứng khi nút bị nhấn */
+  .button-ef:active {
+    transform: scale(0.98); /* Giảm kích thước khi nhấn */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng khi nhấn */
+  }
+  
+  

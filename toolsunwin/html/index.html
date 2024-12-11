@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập Key</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        h3{
+            background: linear-gradient(to right, #121FCF 10%, #00FF00 41%, #9E9229 68%, #CF1512 94%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+           font-family: sans-serif;
+        }
+        /* Định dạng cơ bản cho button */
+.button-ero {
+    width: 100px;
+    height: 37px;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: #1a962b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Thiết lập thời gian cho hiệu ứng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none; /* Xóa outline khi bấm */
+  }
+  
+  /* Hiệu ứng khi di chuột vào button */
+  .button-ero:hover {
+    background-color: #a71a1a; /* Màu nền thay đổi khi hover */
+    transform: scale(1.1); /* Tăng kích thước nút khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng khi hover */
+  }
+  
+  /* Hiệu ứng khi nút bị nhấn */
+  .button-ero:active {
+    transform: scale(0.98); /* Giảm kích thước khi nhấn */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng khi nhấn */
+  }
+  .message {
+    font-size: 18px;
+    color: red;
+}
+.success {
+  font-size: 18px;
+  color: green;
+}
+    </style>
+<body>
+    <div class="container">
+        <h2>Vui Lòng Nhập Key</h2>
+        <div>
+            <input type="text" placeholder="Tên Tài Khoản Game">
+            <input id="keyInput" type="password" placeholder="Vui Lòng Nhập Key">
+            <button id="checkButton" class="button-ef">Đăng Nhập</button>
+            <h3>Bạn Chưa Có Key Liên Hệ Admin</h3>
+            <a href="https://t.me/thanhnhatx"><button class="button-ero">Admin</button></a>
+            <p id="message" class="message"></p>
+        </div>
+    </div>
+      <script src="../js/login.js"></script>
+</body>
+</html>
